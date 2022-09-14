@@ -4,6 +4,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 80px;
 
   @keyframes sound {
     0% {
@@ -38,9 +39,9 @@ const Wrapper = styled.div`
   .bar:nth-child(10) { left: 127px; animation-duration: 442ms; }
 `
 
-const VoiceAnimation = () => {
+const VoiceAnimation = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <div className="bar"></div>
       <div className="bar"></div>
       <div className="bar"></div>
